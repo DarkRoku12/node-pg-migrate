@@ -83,7 +83,7 @@ export const getTimestamp = (logger: Logger, filename: string): number => {
       return new Date(`${year}-${month}-${date}T${hours}:${minutes}:${seconds}.${ms}Z`).valueOf()
     }
   }
-  logger.error(`Can't determine timestamp for ${prefix}`)
+  // logger.error(`Can't determine timestamp for ${prefix}`)
   return Number(prefix) || 0
 }
 
